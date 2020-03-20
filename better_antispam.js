@@ -120,7 +120,7 @@ module.exports = async (client, options) => {
             .addField('Member muted:',`${user}`)
             .addField(`How much time got muted?:`,`${timeMuted} seconds (10 min)`)
             .addField('Reason of mute: ', `Spam`)
-            .addField(`When it was muted that person:`,TheDate+ " at "+ clock+" "+amORpm)
+            .addField(`When was the person muted:`,TheDate+ " at "+ clock+" "+amORpm)
             .setColor('#D9D900')
           ReportChannel.send(muteEmbed);
           setTimeout(()=>{
